@@ -28,7 +28,6 @@
 		97D856341CAA690200DCC720 /* XMNGestureLockInternalController.h in Headers */ = {isa = PBXBuildFile; fileRef = 97D856311CAA690200DCC720 /* XMNGestureLockInternalController.h */; };
 		97D856351CAA690200DCC720 /* XMNGestureLockInternalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D856321CAA690200DCC720 /* XMNGestureLockInternalController.m */; };
 		97D856391CAA6C5A00DCC720 /* XMNGestureLockInternalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D856381CAA6C5A00DCC720 /* XMNGestureLockInternalController.xib */; };
-		97D8563A1CAA6C6400DCC720 /* XMNGestureLockInternalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D856381CAA6C5A00DCC720 /* XMNGestureLockInternalController.xib */; };
 		97DC72BC1CAB808800E52687 /* CALayer+XMNShakeAnim.h in Headers */ = {isa = PBXBuildFile; fileRef = 97DC72BA1CAB808800E52687 /* CALayer+XMNShakeAnim.h */; };
 		97DC72BD1CAB808800E52687 /* CALayer+XMNShakeAnim.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DC72BB1CAB808800E52687 /* CALayer+XMNShakeAnim.m */; };
 		97DC72C01CAB81EE00E52687 /* XMNGestureLockInfoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 97DC72BE1CAB81EE00E52687 /* XMNGestureLockInfoView.h */; };
@@ -301,7 +300,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				973236081CA90EAF006FB76B /* LaunchScreen.storyboard in Resources */,
-				97D8563A1CAA6C6400DCC720 /* XMNGestureLockInternalController.xib in Resources */,
 				973236051CA90EAF006FB76B /* Assets.xcassets in Resources */,
 				973236031CA90EAF006FB76B /* Main.storyboard in Resources */,
 			);

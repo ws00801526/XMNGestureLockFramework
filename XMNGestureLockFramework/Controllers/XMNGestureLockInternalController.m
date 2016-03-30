@@ -62,7 +62,7 @@ typedef NS_ENUM(NSUInteger, XMNGestureLockErrorType) {
 
 - (instancetype)initWithType:(XMNGestureLockType)type {
     
-    if (self = [super initWithNibName:@"XMNGestureLockInternalController" bundle:nil]) {
+    if (self = [super initWithNibName:@"XMNGestureLockInternalController" bundle:[NSBundle bundleWithIdentifier:@"com.XMFraker.XMNGestureLockFramework"]]) {
         _type = type;
     }
     return self;
