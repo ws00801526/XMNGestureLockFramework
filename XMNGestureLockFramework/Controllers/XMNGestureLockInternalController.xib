@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMNGestureLockInternalController">
+            <connections>
+                <outlet property="bottomView" destination="Elr-N2-LfD" id="aXC-rl-zSW"/>
+                <outlet property="lockInfoView" destination="WEv-mh-evt" id="S5J-C7-75W"/>
+                <outlet property="lockView" destination="Bwg-lV-IVR" id="0Ke-1E-YDb"/>
+                <outlet property="tipsLabel" destination="Wpo-LE-huh" id="eJs-pb-BbI"/>
+                <outlet property="topView" destination="a80-MC-qDM" id="Lmy-PG-vpf"/>
+                <outlet property="topViewHConstraint" destination="ufd-Y2-WSe" id="p32-Dx-bXh"/>
+                <outlet property="topViewTConstraint" destination="GbC-98-urR" id="40l-Nf-2I0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Elr-N2-LfD">
+                    <rect key="frame" x="0.0" y="844" width="600" height="0.0"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQE-H2-Brk">
+                            <rect key="frame" x="32" y="0.0" width="68" height="0.0"/>
+                            <state key="normal" title="忘记密码?"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="KVw-94-v8T"/>
+                        <constraint firstItem="mQE-H2-Brk" firstAttribute="leading" secondItem="Elr-N2-LfD" secondAttribute="leading" constant="32" id="ZWJ-Rg-lcb"/>
+                        <constraint firstAttribute="bottom" secondItem="mQE-H2-Brk" secondAttribute="bottom" id="ZrW-oo-SD5"/>
+                        <constraint firstItem="mQE-H2-Brk" firstAttribute="top" secondItem="Elr-N2-LfD" secondAttribute="top" id="vkq-mH-e5T"/>
+                    </constraints>
+                </view>
+                <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bwg-lV-IVR" customClass="XMNGestureLockView">
+                    <rect key="frame" x="0.0" y="244" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Bwg-lV-IVR" secondAttribute="height" multiplier="1:1" id="6Hd-3B-fKy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a80-MC-qDM">
+                    <rect key="frame" x="0.0" y="64" width="600" height="160"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEv-mh-evt" customClass="XMNGestureLockInfoView">
+                            <rect key="frame" x="276.5" y="76" width="47" height="47"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="WEv-mh-evt" secondAttribute="height" multiplier="1:1" id="x6x-7w-A58"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpo-LE-huh">
+                            <rect key="frame" x="279" y="131" width="42" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WEv-mh-evt" firstAttribute="centerX" secondItem="a80-MC-qDM" secondAttribute="centerX" id="Gwz-ou-7wr"/>
+                        <constraint firstItem="WEv-mh-evt" firstAttribute="centerY" secondItem="a80-MC-qDM" secondAttribute="centerY" constant="20" id="Nrg-pm-Ecm"/>
+                        <constraint firstItem="Wpo-LE-huh" firstAttribute="centerX" secondItem="a80-MC-qDM" secondAttribute="centerX" id="mvr-Dj-uT7"/>
+                        <constraint firstItem="Wpo-LE-huh" firstAttribute="top" secondItem="WEv-mh-evt" secondAttribute="bottom" constant="8" id="sdZ-8B-Q25"/>
+                        <constraint firstAttribute="height" constant="160" id="ufd-Y2-WSe"/>
+                        <constraint firstAttribute="bottom" secondItem="Wpo-LE-huh" secondAttribute="bottom" constant="8" id="wVo-o6-2gG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Elr-N2-LfD" secondAttribute="bottom" priority="750" id="6kK-dA-0Ag"/>
+                <constraint firstItem="Bwg-lV-IVR" firstAttribute="top" secondItem="a80-MC-qDM" secondAttribute="bottom" constant="20" id="BYm-yA-IoX"/>
+                <constraint firstAttribute="trailing" secondItem="Bwg-lV-IVR" secondAttribute="trailing" id="EwO-J3-LVf"/>
+                <constraint firstItem="a80-MC-qDM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="GbC-98-urR"/>
+                <constraint firstAttribute="trailing" secondItem="a80-MC-qDM" secondAttribute="trailing" id="TuF-qw-9VY"/>
+                <constraint firstItem="Elr-N2-LfD" firstAttribute="top" secondItem="Bwg-lV-IVR" secondAttribute="bottom" id="Z6a-hL-wYS"/>
+                <constraint firstItem="Elr-N2-LfD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dN4-pB-Ka8"/>
+                <constraint firstItem="Bwg-lV-IVR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e2y-bf-nip"/>
+                <constraint firstItem="a80-MC-qDM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m7d-c9-Ls1"/>
+                <constraint firstAttribute="trailing" secondItem="Elr-N2-LfD" secondAttribute="trailing" id="sBr-cl-hds"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+</document>
